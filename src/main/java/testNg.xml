@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="My Suite" thread-count="3" parallel="methods">
+
+  <!--  <listeners>
+        <listener class-name="TestNg.FailedTestCasesExecution.RetryListenerClass"/>
+    </listeners>
+    <refer>
+        <verbose>
+
+        </verbose>
+    </refer>-->
+<!--Excecution Flow -Order of annotations-->
+    <!--<test name="Test1">
+        <classes>
+            <class name="TestNg.TestNgSuites" />
+            <class name="TestNg.TestSuites1"/>
+        </classes>
+    </test>--> <!-- Test -->
+   <!-- <test name="Test2">
+
+        <classes>
+            <class name="softwareTestingMaterial.Test2" />
+        </classes>
+    </test>  Test -->
+    <!--Parameterized Testing-->
+       <!-- <test name="testngTest">
+            <parameter name="browser" value="firefox"/>
+            <classes>
+                <class name="TestNg.ParametrizedTest" />
+            </classes>
+        </test>
+        <test name="chrome browser">
+            <parameter name="browser" value="chrome"/>
+            <classes>
+                <class name="TestNg.ParametrizedTest"/>
+            </classes>
+        </test>-->
+ <!--Parallel Testing-->
+<!--<test name="Parrallel Execution">
+    <classes>
+        <class name="TestNg.ParallelTesting">
+        </class>
+    </classes>
+</test>-->
+    <!--Listeners Testing-->
+
+  <!--   <listeners>
+         <listener class-name="TestNg.ListenerTestNGTestCase"/>
+     </listeners>
+     <test name="TestNGListener">
+         <classes>
+             <class name="TestNg.ListenersTestNG"/>
+         </classes>
+     </test>
+-->
+     <!--Groups Testing-->
+
+    <test name="Practice Grouping">
+        <groups>
+            <define name="All">
+                <include name="Car"/>
+               <include name="Scooter"/>
+            </define>
+            <run>
+                <include name="All"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="TestNg.GroupingTesting" />
+        </classes>
+    </test>
+
+    </suite > <!-- Suite -->
