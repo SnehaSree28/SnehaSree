@@ -46,4 +46,10 @@ public class Amazon {
         System.out.println("Its is executing");
     }
 
+
+    @Test
+    public void gitTesting(){
+        System.out.println("Git Testing New ");
+    }
+
 }
