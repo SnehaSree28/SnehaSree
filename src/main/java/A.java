@@ -18,4 +18,8 @@ public class A {
     public void h(){
         System.out.println("ggg");
     }
+    @Test
+    public void gitTesting(){
+        System.out.println("Testing git");
+    }
 }
